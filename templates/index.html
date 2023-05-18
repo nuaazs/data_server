@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSV Upload</title>
+</head>
+<body>
+    <h1>Upload CSV File</h1>
+    <form action="{{ url_for('result') }}" method="post" enctype=multipart/form-data>
+        <label for="file">CSV文件:</label>
+        <input type="file" id="file" name="file" required><br>
+        <label for="win_len">显示窗口半径大小(略大于圆的半径即可):</label>
+        <input type="number" id="win_len" name="win_len" value="100" required><br>
+        <label for="th">截断阈值（小于该值的像素不考虑）:</label>
+        <input type="number" id="th" name="th" value="400" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
