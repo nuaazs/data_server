@@ -58,9 +58,9 @@ plt.plot([0, 0], [-1*max(FWHM_plot*1e6), max(FWHM_plot*1e6)], 'k-')
 plt.plot([-1*max(z_plot*1e2), max(z_plot*1e2)], [0, 0], 'k-')
 
 plt.xlabel("Position z (cm)")
-plt.ylabel("Y")
+plt.ylabel("um")
 plt.legend()
-plt.title("FWHM of Gaussian beam", loc='right')
+plt.title("Gaussian beam propagation", loc='right')
 
 
 # 可视化光束半径结果
@@ -76,7 +76,7 @@ plt.plot([0, 0], [-1*max(w_plot*1e6), max(w_plot*1e6)], 'k-')
 plt.plot([-1*max(z_plot*1e2), max(z_plot*1e2)], [0, 0], 'k-')
 
 plt.xlabel("Position z (cm)")
-plt.ylabel("Y")
+plt.ylabel("um")
 # 图形设置,标题放在右上方
 plt.title("Gaussian beam propagation", loc='right')
 plt.legend()
