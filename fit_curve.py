@@ -58,7 +58,7 @@ plt.plot([0, 0], [-1*max(FWHM_plot*1e6), max(FWHM_plot*1e6)], 'k-')
 plt.plot([-1*max(z_plot*1e2), max(z_plot*1e2)], [0, 0], 'k-')
 
 plt.xlabel("Position z (cm)")
-plt.ylabel("FWHM (um)")
+plt.ylabel("Y")
 plt.legend()
 plt.title("FWHM of Gaussian beam", loc='right')
 
