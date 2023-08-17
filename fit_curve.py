@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 # 输入数据
 z = np.array([-0.015, -0.01, -0.005, 0, 0.005, 0.01, 0.015])  # 位置 (m)
 FWHM = np.array([72.6, 61.6, 55, 50.6, 55, 57.2, 68.2])*2*1e-6  # FWHM (m)
+FWHM = FWHM*1.73 # modified in 2023-08-17
 lambda_ = 532e-9                                              # 光波长 (m)
 
 # 定义高斯光束传播函数 (z: 位置，w0: 腰半径，zR: Rayleigh 范围)，返回光束半径
@@ -75,7 +76,7 @@ plt.plot([0, 0], [-1*max(w_plot*1e6), max(w_plot*1e6)], 'k-')
 plt.plot([-1*max(z_plot*1e2), max(z_plot*1e2)], [0, 0], 'k-')
 
 plt.xlabel("Position z (cm)")
-plt.ylabel("w (um)")
+plt.ylabel("Y")
 # 图形设置,标题放在右上方
 plt.title("Gaussian beam propagation", loc='right')
 plt.legend()
