@@ -50,7 +50,7 @@ w_plot =  w_z(z_plot, *popt)
 FWHM_plot = w_to_FWHM(w_plot)
 
 plt.plot(z*1e2, FWHM*1e6, 'o', label="Data")  # 绘制数据点
-plt.plot(z_plot*1e2, FWHM_plot*1e6, 'g--',label="Fit FWHM(z)")  # 绘制拟合曲线
+plt.plot(z_plot*1e2, FWHM_plot*1e6, 'g--',label="Fit Curve(z)")  # 绘制拟合曲线
 plt.plot(z_plot*1e2, -1*FWHM_plot*1e6, 'g--')  # 绘制拟合曲线
 
 # 绘制出x，y坐标轴
